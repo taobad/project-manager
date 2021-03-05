@@ -1,0 +1,20 @@
+{
+    "name": "Webhook",
+    "alias": "webhook",
+    "description": "Default module for handling incoming system webhooks e.g Paypal etc",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "laptop-code",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Webhook\\Providers\\WebhookServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

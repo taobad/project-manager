@@ -1,0 +1,20 @@
+{
+    "name": "Knowledgebase",
+    "alias": "knowledgebase",
+    "description": "Default module for handling knowledgebase articles.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "book-reader",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Knowledgebase\\Providers\\KnowledgebaseServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

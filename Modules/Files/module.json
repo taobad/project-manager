@@ -1,0 +1,20 @@
+{
+    "name": "Files",
+    "alias": "files",
+    "description": "Default module for handling system file uploads",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "folder-open",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Files\\Providers\\FilesServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

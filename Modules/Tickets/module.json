@@ -1,0 +1,20 @@
+{
+    "name": "Tickets",
+    "alias": "tickets",
+    "description": "Default module for handling support tickets.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "life-ring",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Tickets\\Providers\\TicketsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

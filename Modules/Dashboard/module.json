@@ -1,0 +1,20 @@
+{
+    "name": "Dashboard",
+    "alias": "dashboard",
+    "description": "Default system homepage display.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "tachometer-alt",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Dashboard\\Providers\\DashboardServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

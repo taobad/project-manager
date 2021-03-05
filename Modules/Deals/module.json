@@ -1,0 +1,20 @@
+{
+    "name": "Deals",
+    "alias": "deals",
+    "description": "Default module for handling and managing deals/opportunities.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "funnel-dollar",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Deals\\Providers\\DealsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

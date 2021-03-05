@@ -1,0 +1,66 @@
+version: '3'
+
+services:
+  web:
+    container_name: webserver
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    ports:
+    - "8080:80"
+    networks:
+      - workicenet
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - php
+      - mysql
+
+  php:
+    container_name: php
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "9000:9000"
+    networks: 
+      - workicenet
+
+  php-worker:
+    container_name: worker
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    volumes:
+      - .:/var/www/html
+    command: php artisan queue:work --queue=default,high,normal,low --tries=2 --timeout=40 --daemon
+    networks:
+      - workicenet
+  mysql:
+    image: mysql:5.7.29
+    container_name: mysql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: workice
+      MYSQL_USER: workice
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_PASSWORD: secret
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    networks:
+      - workicenet
+networks:
+  workicenet:
+    driver: bridge

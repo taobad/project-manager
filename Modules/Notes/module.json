@@ -1,0 +1,20 @@
+{
+    "name": "Notes",
+    "alias": "notes",
+    "description": "A module for personal notes.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "sticky-note",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Notes\\Providers\\NotesServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Invoices",
+    "alias": "invoices",
+    "description": "Default module for handling invoicing.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "file-invoice-dollar",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Invoices\\Providers\\InvoicesServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

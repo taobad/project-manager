@@ -1,0 +1,20 @@
+{
+    "name": "Contacts",
+    "alias": "contacts",
+    "description": "Default module for displaying system contacts",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "user-friends",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Contacts\\Providers\\ContactsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

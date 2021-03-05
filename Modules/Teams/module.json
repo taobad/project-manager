@@ -1,0 +1,20 @@
+{
+    "name": "Teams",
+    "alias": "teams",
+    "description": "Default module for handling user assignment for tasks/projects.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "chalkboard-teacher",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Teams\\Providers\\TeamsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

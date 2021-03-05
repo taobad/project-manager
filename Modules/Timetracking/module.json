@@ -1,0 +1,20 @@
+{
+    "name": "Timetracking",
+    "alias": "timetracking",
+    "description": "Default module for time tracking for projects.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "user-clock",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Timetracking\\Providers\\TimetrackingServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

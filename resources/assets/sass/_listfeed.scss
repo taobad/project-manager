@@ -1,0 +1,47 @@
+//colors
+$white: #fff;
+$color_fern_approx: #e2e8f0;
+.list-feed {
+    margin: 0;
+    padding: 7px 0;
+    list-style: none;
+    >li {
+        position: relative;
+        margin: 0;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 8px;
+            height: 8px;
+            background-color: $white;
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid $color_fern_approx;
+            z-index: 3;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 3px;
+            bottom: -7px;
+            width: 0;
+            border-left: 1px solid $color_fern_approx;
+            border-right: 1px solid $color_fern_approx;
+            z-index: 2;
+        }
+        &:last-child {
+            padding-bottom: 0;
+            &:after {
+                content: none
+            }
+        }
+        &:first-child:after {
+            top: 8px
+        }
+    }
+}

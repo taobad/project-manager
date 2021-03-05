@@ -1,0 +1,20 @@
+{
+    "name": "Installer",
+    "alias": "installer",
+    "description": "Default module for handling Workice installation.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "robot",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Installer\\Providers\\InstallerServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

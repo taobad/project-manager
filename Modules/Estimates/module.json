@@ -1,0 +1,20 @@
+{
+    "name": "Estimates",
+    "alias": "estimates",
+    "description": "Default module for handling estimates.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "balance-scale",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Estimates\\Providers\\EstimatesServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

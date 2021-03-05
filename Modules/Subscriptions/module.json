@@ -1,0 +1,20 @@
+{
+    "name": "Subscriptions",
+    "alias": "subscriptions",
+    "description": "A module to handle user subscriptions.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "recycle",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Subscriptions\\Providers\\SubscriptionsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

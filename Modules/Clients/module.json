@@ -1,0 +1,20 @@
+{
+    "name": "Clients",
+    "alias": "clients",
+    "description": "Default module for displaying system clients.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "user-tie",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Clients\\Providers\\ClientsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

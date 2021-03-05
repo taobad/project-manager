@@ -1,0 +1,20 @@
+{
+    "name": "Issues",
+    "alias": "issues",
+    "description": "A module for handling project issues.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "exclamation-circle",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Issues\\Providers\\IssuesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

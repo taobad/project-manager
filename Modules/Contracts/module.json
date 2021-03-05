@@ -1,0 +1,20 @@
+{
+    "name": "Contracts",
+    "alias": "contracts",
+    "description": "A module to handle e-contracts and signatures.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "file-contract",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Contracts\\Providers\\ContractsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

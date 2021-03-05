@@ -1,0 +1,20 @@
+{
+    "name": "Calendar",
+    "alias": "calendar",
+    "description": "Default module for displaying calendar events and appointments",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "calendar-alt",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Calendar\\Providers\\CalendarServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

@@ -1,0 +1,8 @@
+/*!
+* screenfull
+* v1.0.4 - 2013-05-26
+* https://github.com/sindresorhus/screenfull.js
+* (c) Sindre Sorhus; MIT License
+*/
+
+/*! http://mths.be/placeholder v2.0.7 by @mathias */

@@ -1,0 +1,23 @@
+{
+    "name": "wmandai/activity",
+    "description": "System activity logs",
+    "authors": [
+        {
+            "name": "William M",
+            "email": "wil@gitbench.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Activity\\Providers\\ActivityServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Activity\\": ""
+        }
+    }
+}

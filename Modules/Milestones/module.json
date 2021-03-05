@@ -1,0 +1,20 @@
+{
+    "name": "Milestones",
+    "alias": "milestones",
+    "description": "Default module for project milestones.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "layer-group",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Milestones\\Providers\\MilestonesServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

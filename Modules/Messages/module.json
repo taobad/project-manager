@@ -1,0 +1,20 @@
+{
+    "name": "Messages",
+    "alias": "messages",
+    "description": "Default module for handling system messages.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "envelope-open-text",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Messages\\Providers\\MessagesServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Updates",
+    "alias": "updates",
+    "description": "Default module for updating your application.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "tools",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Updates\\Providers\\UpdatesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

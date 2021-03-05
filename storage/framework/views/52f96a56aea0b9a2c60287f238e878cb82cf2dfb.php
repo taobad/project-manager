@@ -1,0 +1,2 @@
+<?php echo app('arrilot.widget')->run('Activities\Feed', ['activities' => Modules\Activity\Entities\Activity::where('actionable_type', Modules\Invoices\Entities\Invoice::class)->with('user:id,username,name')->latest()->take(50)->get(), 'view' => 'dashboard']); ?>
+<?php /**PATH /var/www/project-manager/Modules/Dashboard/Providers/../Resources/views/_sidebar/invoices.blade.php ENDPATH**/ ?>

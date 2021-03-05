@@ -1,0 +1,20 @@
+{
+    "name": "Leads",
+    "alias": "leads",
+    "description": "Default module for leads management.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "user-circle",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Leads\\Providers\\LeadsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

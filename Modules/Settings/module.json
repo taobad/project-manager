@@ -1,0 +1,20 @@
+{
+    "name": "Settings",
+    "alias": "settings",
+    "description": "Default module for handling system settings.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "sliders-h",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Settings\\Providers\\SettingsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

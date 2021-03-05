@@ -1,0 +1,20 @@
+{
+    "name": "Payments",
+    "alias": "payments",
+    "description": "Default module for handling payment transactions.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "receipt",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Payments\\Providers\\PaymentsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

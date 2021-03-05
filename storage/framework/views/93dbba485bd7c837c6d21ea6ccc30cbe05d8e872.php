@@ -1,0 +1,1 @@
+<script src="<?php echo e(getAsset('js/chart.js')); ?>"></script><?php /**PATH /var/www/project-manager/resources/views/stacks/js/chart.blade.php ENDPATH**/ ?>

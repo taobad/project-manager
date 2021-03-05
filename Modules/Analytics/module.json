@@ -1,0 +1,20 @@
+{
+    "name": "Analytics",
+    "alias": "analytics",
+    "description": "A module to calculate system stats for reporting.",
+    "keywords": [],
+    "active": 1,
+    "version": "3.0.0",
+    "developer": "William M",
+    "icon": "chart-line",
+    "order": 0,
+    "core": 1,
+    "providers": [
+        "Modules\\Analytics\\Providers\\AnalyticsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
