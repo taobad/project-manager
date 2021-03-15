@@ -1073,10 +1073,10 @@ table.dataTable.display {
     left: 0;
     top: 100%;
     z-index: -1;
-    border-left: 3px solid #5a67d8;
+    border-left: 3px solid #00688b;
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-top: 3px solid #5a67d8;
+    border-top: 3px solid #00688b;
 }
 
 .ribbon span::after {
@@ -1090,17 +1090,17 @@ table.dataTable.display {
 }
 
 .ribbon.info span {
-    background: #5a67d8;
+    background: #00688b;
 }
 
 .ribbon.info span::before {
-    border-left: 3px solid #5a67d8;
-    border-top: 3px solid #5a67d8;
+    border-left: 3px solid #00688b;
+    border-top: 3px solid #00688b;
 }
 
 .ribbon.info span::after {
-    border-right: 3px solid #5a67d8;
-    border-top: 3px solid #5a67d8;
+    border-right: 3px solid #00688b;
+    border-top: 3px solid #00688b;
 }
 
 .ribbon.success span {
@@ -2567,14 +2567,14 @@ input.discreet {
     }
     &.active a {
         border: none;
-        border-bottom: 2px solid #5a67d8;
+        border-bottom: 2px solid #00688b;
         &:focus {
             border: none;
-            border-bottom: 2px solid #5a67d8
+            border-bottom: 2px solid #00688b
         }
         &:hover {
             border: none;
-            border-bottom: 2px solid #5a67d8
+            border-bottom: 2px solid #00688b
         }
     }
 }
@@ -2608,7 +2608,7 @@ input.discreet {
         }
     }
     &.active>a {
-        color: #5a67d8
+        color: #00688b
     }
 }
 
@@ -2653,7 +2653,7 @@ input.discreet {
 
 .fc-button-primary {
     color: #fff !important;
-    background-color: #5a67d8 !important;
+    background-color: #00688b !important;
     padding: .25rem .5rem !important;
     border: none !important;
     box-shadow: none;
@@ -2780,12 +2780,12 @@ label.display-block {
 
 .gantt {
     .bar-progress {
-        fill: #5a67d8 !important
+        fill: #00688b !important
     }
     .bar-wrapper.active {
         .bar-progress {
             &:hover {
-                fill: #5a67d8
+                fill: #00688b
             }
         }
     }
@@ -3451,10 +3451,10 @@ label.display-block {
 a {
     color: #4c51bf;
     &:focus {
-        color: #5a67d8
+        color: #00688b
     }
     &:hover {
-        color: #5a67d8
+        color: #00688b
     }
 }
 

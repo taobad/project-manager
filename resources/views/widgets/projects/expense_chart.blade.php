@@ -11,8 +11,7 @@
                 @langapp('unbilled')
             </div>
             <div class="inline">
-                <div class="easypiechart" data-bar-color="#5a67d8" data-line-cap="butt" data-line-width="30" data-percent="{{ percent($project->expensesPercent()) }}"
-                    data-scale-color="#fff" data-size="150" data-track-color="#eee">
+                <div class="easypiechart" data-bar-color="#00688b" data-line-cap="butt" data-line-width="30" data-percent="{{ percent($project->expensesPercent()) }}" data-scale-color="#fff" data-size="150" data-track-color="#eee">
                     <span class="h2 step font25">
                         {{ percent($project->expensesPercent()) }}
                     </span>%

@@ -1,0 +1,2 @@
+<?php echo app('arrilot.widget')->run('Activities\Feed', ['activities' => Modules\Activity\Entities\Activity::whereIn('actionable_type', [Modules\Deals\Entities\Deal::class, Modules\Leads\Entities\Lead::class])->with('user:id,username,name')->latest()->take(50)->get(), 'view' => 'dashboard']); ?>
+<?php /**PATH /var/www/project-manager/Modules/Dashboard/Providers/../Resources/views/_sidebar/deals.blade.php ENDPATH**/ ?>

@@ -1,3 +1,35 @@
 .logo-text{
 	color:#82b541 !important;
 }
+
+.text-skye-blue-500 { 
+	color: #03a89e; 
+}
+
+.border-skye-blue-500 { 
+	border-style: ridge;
+	border-color: #03a89e; 
+}
+
+.text-skye-blue-500:hover { 
+	color: #056861; 
+}
+
+.bg-skye-blue-500 { 
+	background-color: #03a89e; 
+}
+
+.bg-skye-blue-500:hover { 
+	background-color: #056861; 
+}
+
+
+.bg-primary-500 { 
+	color: #ffffff;
+	background-color: #03a89e; 
+}
+
+.bg-primary-500:hover { 
+	color: #ffffff;
+	background-color: #056861; 
+}

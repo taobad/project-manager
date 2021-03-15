@@ -2,7 +2,7 @@
 
 return [
     'text' => [
-        'primary' => 'text-indigo-500 hover:text-indigo-600',
+        'primary' => 'text-skye-blue-500',
         'success' => 'text-green-500 hover:text-green-600',
         'danger' => 'text-red-500 hover:text-red-600',
         'info' => 'text-blue-600 hover:text-blue-700',
@@ -11,7 +11,7 @@ return [
         'dracula' => 'text-pink-500 hover:text-pink-600',
     ],
     'button' => [
-        'primary' => 'bg-transparent hover:bg-indigo-500 text-indigo-600 font-semibold hover:text-white py-1 px-2 border border-indigo-500 hover:border-transparent rounded',
+        'primary' => 'bg-transparent bg-primary-500 font-semibold hover:text-white py-1 px-2 border hover:border-transparent rounded',
         'success' => 'bg-transparent hover:bg-green-500 text-green-600 font-semibold hover:text-white py-1 px-2 border border-green-500 hover:border-transparent rounded',
         'danger' => 'bg-transparent hover:bg-red-500 text-red-600 font-semibold hover:text-white py-1 px-2 border border-red-500 hover:border-transparent rounded',
         'info' => 'bg-transparent hover:bg-blue-600 text-blue-600 font-semibold hover:text-white py-1 px-2 border border-blue-600 hover:border-transparent rounded',
@@ -20,7 +20,7 @@ return [
         'dracula' => 'bg-transparent hover:bg-pink-500 text-pink-600 font-semibold hover:text-white py-1 px-2 border border-pink-500 hover:border-transparent rounded',
     ],
     'bg' => [
-        'primary' => 'bg-indigo-500',
+        'primary' => 'bg-skye-blue-500',
         'success' => 'bg-green-500',
         'danger' => 'bg-red-500',
         'info' => 'bg-blue-600',
@@ -29,7 +29,7 @@ return [
         'dracula' => 'bg-pink-500',
     ],
     'links' => [
-        'primary' => 'text-indigo-500 hover:text-indigo-600',
+        'primary' => 'text-skye-blue-500',
         'success' => 'text-green-500 hover:text-green-600',
         'danger' => 'text-red-500 hover:text-red-600',
         'info' => 'text-blue-600 hover:text-blue-700',

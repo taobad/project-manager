@@ -14,8 +14,7 @@
                 {{ $project->tasks->where('progress', 100)->count() }} @langapp('done')
             </div>
             <div class="inline">
-                <div class="easypiechart" data-bar-color="#5a67d8" data-line-width="6" data-loop="false"
-                    data-percent="{{ percent($project->taskDonePercent()) }}" data-size="150">
+                <div class="easypiechart" data-bar-color="#00688b" data-line-width="6" data-loop="false" data-percent="{{ percent($project->taskDonePercent()) }}" data-size="150">
                     <span class="h2 step">
                         {{ percent($project->taskDonePercent()) }}
                     </span>

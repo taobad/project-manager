@@ -1,0 +1,2 @@
+<?php echo app('arrilot.widget')->run('Activities\Feed', ['activities' => Modules\Activity\Entities\Activity::where('actionable_type', Modules\Expenses\Entities\Expense::class)->with('user:id,username,name')->latest()->take(50)->get(), 'view' => 'dashboard']); ?>
+<?php /**PATH /var/www/project-manager/Modules/Dashboard/Providers/../Resources/views/_sidebar/expenses.blade.php ENDPATH**/ ?>

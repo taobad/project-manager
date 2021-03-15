@@ -167,7 +167,7 @@ $ext = substr($favicon, -4);?>
 
 </head>
 
-<body class="antialiased text-gray-800">
+<body class="antialiased text-white-800">
     @include('cookie_consent')
 
     <section class="vbox" id="app">

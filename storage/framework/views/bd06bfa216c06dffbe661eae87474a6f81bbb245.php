@@ -169,7 +169,7 @@ $ext = substr($favicon, -4);?>
 
 </head>
 
-<body class="antialiased text-gray-800">
+<body class="antialiased text-white-800">
     <?php echo $__env->make('cookie_consent', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
     <section class="vbox" id="app">
