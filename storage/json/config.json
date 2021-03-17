@@ -6,7 +6,7 @@
         },
         {
             "config_key": "allow_client_registration",
-            "value": "FALSE"
+            "value": "TRUE"
         },
         {
             "config_key": "amount_in_words",
@@ -810,7 +810,7 @@
         },
         {
             "config_key": "social_login",
-            "value": "FALSE"
+            "value": "TRUE"
         },
         {
             "config_key": "sidebar_theme",
