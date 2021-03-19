@@ -227,7 +227,11 @@ abstract class UsersController extends Controller
             ->editColumn(
                 'name',
                 function ($user) {
-                    return '<a class="' . themeLinks('font-semibold') . '" href="' . route('users.view', $user->id) . '"><span class="thumb-xs avatar lobilist-check"><img src="' . $user->profile->photo . '" class="inline-block img-circle" alt="' . $user->name . '"></span> ' . str_limit($user->name, 20) . '</a>';
+                    $profile_photo = '/default_path';
+                    if ($user->profile) {
+                        $profile_photo = $user->profile->photo;
+                    }
+                    return '<a class="' . themeLinks('font-semibold') . '" href="' . route('users.view', $user->id) . '"><span class="thumb-xs avatar lobilist-check"><img src="' . $profile_photo . '" class="inline-block img-circle" alt="' . $user->name . '"></span> ' . str_limit($user->name, 20) . '</a>';
                 }
             )
             ->editColumn(
@@ -246,7 +250,10 @@ abstract class UsersController extends Controller
                 'job_title',
                 function ($user) {
                     $str = $user->on_holiday ? '<i class="fas fa-plane-departure text-danger"></i> ' : '';
-                    return $str .= str_limit($user->profile->job_title, 15);
+                    if ($user->profile) {
+                        return $str .= str_limit($user->profile->job_title, 15);
+                    }
+                    return $str;
                 }
             )
             ->editColumn(
@@ -256,13 +263,19 @@ abstract class UsersController extends Controller
                     if ($user->has_chats) {
                         $str .= '<i class="fas fa-comment-alt text-success"></i> ';
                     }
-                    return $str . $user->profile->mobile;
+                    if ($user->profile) {
+                        return $str . $user->profile->mobile;
+                    }
+                    return $str;
                 }
             )
             ->editColumn(
                 'city',
                 function ($user) {
-                    return $user->profile->city;
+                    if ($user->profile) {
+                        return $user->profile->city;
+                    }
+                    return '-';
                 }
             )
             ->editColumn(
