@@ -1,9 +1,9 @@
+
+
 <?php $__env->startSection('content'); ?>
 
 <div>
-    <span class="pull-right navbar-brand mt-8 font-semibold text-center text-2xl leading-8 block <?php echo e(settingEnabled('blur_login') ? 'text-white' : themeText()); ?>"> Register
-    </span>
-    <section id="content" class="wrapper-md content pull-left" style="margin-top: 50px;">
+    <section id="content" class="wrapper-md content" style="margin-top: 50px;">
         <div id="login-darken"></div>
         <div id="login-form" class="container max-w-xl aside-xxl animated fadeInUp">
             <span class="navbar-brand mt-8 font-semibold text-center text-2xl leading-8 block <?php echo e(settingEnabled('blur_login') ? 'text-white' : themeText()); ?>">
@@ -54,13 +54,6 @@
 
                 <?php echo Form::open(['route' => 'login', 'class' => 'panel-body wrapper-lg']); ?>
 
-
-                <?php if(isDemo()): ?>
-                <div class="alert alert-info">
-                    <button type="button" class="close" data-dismiss="alert">×</button>
-                    For demo use <strong>admin@example.com</strong> and password <strong>admin</strong>
-                </div>
-                <?php endif; ?>
 
                 <div class="form-group<?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
                     <label for="email"><?php echo trans('app.'.'email'); ?></label>

@@ -1,1 +1,0 @@
-<?php /**PATH /var/www/project-manager/resources/views/partial/custom.blade.php ENDPATH**/ ?>

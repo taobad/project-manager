@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Validator;
 use Modules\Clients\Entities\Client;
 use Modules\Users\Entities\User;
 
+use Illuminate\Support\Facades\Http;
+
 class RegisterController extends Controller
 {
     /*
@@ -107,17 +109,69 @@ class RegisterController extends Controller
      */
     public function register(Request $request)
     {
+
+        $response = Http::get('http://sso.lupinga.local/api/test');
+        var_dump($response);
+        
+        //$response = Http::get('http://sso.lupinga.local/api/test');
+        /*$curl = curl_init();
+        curl_setopt_array($curl, array(
+        CURLOPT_URL => 'http://sso.lupinga.local/api/test',
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'GET',
+        ));
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        var_dump($response);
+        echo "Test";*/
+
+        die;
+
+       /* $response = Http::post('http://sso.lupinga.local/api/login', [
+            'name' => 'admin@demo.com',
+            'password' => '123456',
+        ]);  */   
+        
+        /*$curl = curl_init();
+        curl_setopt_array($curl, array(
+        CURLOPT_URL => 'http://sso.lupinga.local/api/login',
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'POST',
+        CURLOPT_POSTFIELDS => array('email' => 'admin@demo.com','password' => '123456'),
+        ));
+        $response = curl_exec($curl);
+        curl_close($curl);
+        echo $response;*/
+
+        print_r($response);exit;
+
         $this->validator($request->all())->validate();
 
         if (config('system.secure_password')) {
             $request->validate(['password' => 'pwned']);
         }
 
+        
         $user = $this->create($request->all());
 
         event(new Registered($user));
 
         $this->guard()->login($user);
+
+        // update sso-api user table
+        
 
         return $this->registered($request, $user)
         ?: redirect($this->redirectPath());
