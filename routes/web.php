@@ -59,3 +59,16 @@ Route::get('/mg', 'Welcome@mg')->middleware(['demo']);
 Route::get('support', 'SupportController@ticket')->name('support.ticket')->middleware('cors');
 Route::post('stripe/webhook', [StripeWebhookController::class, 'handleWebhook']);
 Route::gocardlessWebhooks('webhook/gocardless/ipn');
+
+// Get access token
+Route::get('forge/oauth/token', 'Forge\OAuth\TokenController@index')->name('forge.token');
+// Get all the buckets & objects
+Route::get('forge/oss/buckets', 'Forge\Oss\BucketController@index')->name('forge.buckets');
+// Create a new bucket
+Route::post('forge/oss/buckets', 'Forge\Oss\BucketController@store')->name('forge.buckets');
+// Upload file to bucket
+Route::post('forge/oss/objects', 'Forge\Oss\ObjectController@store')->name('forge.buckets');
+// Start translate the model
+Route::post('forge/model-derivative/jobs', 'Forge\ModelDerivative\JobController@store')->name('forge.jobs');
+Route::resource('forge', 'ForgeController');
+// Route::resource('forge-buckets', 'ForgeBucketController');

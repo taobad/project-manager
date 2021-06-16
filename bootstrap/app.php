@@ -12,28 +12,6 @@
 $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
-
-/*
-// Load the right environment variable
-$tag = getenv('SERVICE_TAGS');
-if ($tag != null) {
-    switch ($tag) {
-        case 'staging':
-            $app->loadEnvironmentFrom('./env/.env.staging');
-            break;
-        case 'uat':
-            $app->loadEnvironmentFrom('./env/.env.uat');
-            break;
-        case 'production':
-            $app->loadEnvironmentFrom('./env/.env');
-            break;
-        default:
-            $app->loadEnvironmentFrom('./env/.env.local');
-            break;
-    };
-} else {
-    $app->loadEnvironmentFrom('./env/.env.local');
-}*/
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
