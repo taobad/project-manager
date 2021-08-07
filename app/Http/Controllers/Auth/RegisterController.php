@@ -110,8 +110,8 @@ class RegisterController extends Controller
     public function register(Request $request)
     {
 
-        $response = Http::get('http://sso.lupinga.local/api/test');
-        var_dump($response);
+        // $response = Http::get('http://sso.lupinga.local/api/test');
+        // var_dump($response);
         
         //$response = Http::get('http://sso.lupinga.local/api/test');
         /*$curl = curl_init();
@@ -132,7 +132,7 @@ class RegisterController extends Controller
         var_dump($response);
         echo "Test";*/
 
-        die;
+        // die;
 
        /* $response = Http::post('http://sso.lupinga.local/api/login', [
             'name' => 'admin@demo.com',
@@ -155,7 +155,7 @@ class RegisterController extends Controller
         curl_close($curl);
         echo $response;*/
 
-        print_r($response);exit;
+        // print_r($response);exit;
 
         $this->validator($request->all())->validate();
 
