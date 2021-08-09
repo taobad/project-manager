@@ -4,8 +4,10 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Redis;
-use Log;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
+use Modules\Users\Http\Controllers\Api\v1\UsersApiController;
+use Log;
 
 
 class pmSubscribe extends Command
@@ -41,10 +43,13 @@ class pmSubscribe extends Command
      */
     public function handle()
     {
+        Log::info("call pm:subscribe command");
           Redis::subscribe(['pm-user-registration'], function ($message) {
             $userData  = json_decode($message, true);
-            Log::alert("This is for PM");
-            Log::alert($userData);
+            $request = new Request($userData);
+            $uapi = new UsersApiController($request);
+            $uapi->saveUms($request);
+            //Log::alert($request);
             // if(Str::contains($userData['requestUrl'], 'seller')){
             //     Log::alert("I WILL CALL THE SELLER REGISTRATION METHOD");
             //     $guestController = new GuestController;

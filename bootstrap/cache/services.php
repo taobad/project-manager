@@ -77,6 +77,7 @@
     73 => 'App\\Providers\\DropboxServiceProvider',
     74 => 'App\\Providers\\ExtrasServiceProvider',
     75 => 'App\\Providers\\CaptchaServiceProvider',
+    76 => 'Auth0\\Login\\LoginServiceProvider',
   ),
   'eager' => 
   array (
@@ -138,6 +139,7 @@
     55 => 'App\\Providers\\DropboxServiceProvider',
     56 => 'App\\Providers\\ExtrasServiceProvider',
     57 => 'App\\Providers\\CaptchaServiceProvider',
+    58 => 'Auth0\\Login\\LoginServiceProvider',
   ),
   'deferred' => 
   array (

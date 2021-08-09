@@ -11,6 +11,7 @@ use Modules\Users\Events\UserUpdated;
 use Modules\Users\Http\Requests\UserRequest;
 use Modules\Users\Transformers\UserResource;
 use Modules\Users\Transformers\UsersResource;
+use Log;
 
 class UsersApiController extends Controller
 {
@@ -55,6 +56,15 @@ class UsersApiController extends Controller
         return response(new UserResource($user), Response::HTTP_OK);
     }
 
+    public function saveUms($request){
+        Log::info("This is just a test");
+        $userColumns = ['username', 'email', 'password', 'name'];
+        $user = $this->user->create($request->only($userColumns));
+        $user->update(['email_verified_at' => config('system.verification') ? null : now()]);
+        $user->profile->update($request->except(['username', 'password', 'email', 'roles', 'department', 'name', 'locale']));
+
+        $user->syncRoles($request->user_role);
+    }
     public function save(UserRequest $request)
     {
         $this->checkPassword($request);
@@ -78,11 +88,13 @@ class UsersApiController extends Controller
 
     public function update(UserRequest $request, $id = null)
     {
+        Log::info($request);
         $this->checkPassword($request);
         $user = $this->user->findOrFail($id);
         $user->update($request->all());
         $user->profile->update($request->all());
         $user->syncRoles($request->roles);
+
         event(new UserUpdated($user));
         return ajaxResponse(
             [
