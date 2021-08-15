@@ -57,9 +57,10 @@ class UsersApiController extends Controller
     }
 
     public function saveUms($request){
-        Log::info("This is just a test");
-        $userColumns = ['username', 'email', 'password', 'name'];
+        Log::info($request->profession);
+        $userColumns = ['username', 'email', 'password', 'name', 'profession'];
         $user = $this->user->create($request->only($userColumns));
+        $user->update(['profession'=>$request->profession]);
         $user->update(['email_verified_at' => config('system.verification') ? null : now()]);
         $user->profile->update($request->except(['username', 'password', 'email', 'roles', 'department', 'name', 'locale']));
 
