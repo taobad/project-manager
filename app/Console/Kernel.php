@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-
+        Commands\pmSubscribe::class,
     ];
 
     /**
@@ -56,6 +56,8 @@ class Kernel extends ConsoleKernel
         //$schedule->command('app:reset-demo')->cron('0 */3 * * *')->name('demo.reset')->withoutOverlapping(5);
         // $schedule->command('inspire')
         //          ->hourly();
+
+        $schedule->command('pm:subscribe')->everyMinute();
     }
 
     /**

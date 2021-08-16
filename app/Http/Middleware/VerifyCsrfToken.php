@@ -38,6 +38,5 @@ class VerifyCsrfToken extends BaseVerifier
         'webhook/aircall/inbound/*',
         'webhook/ivr/*',
         'webhook/gocardless/*',
-        'forge/*'
     ];
 }

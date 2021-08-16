@@ -22,11 +22,12 @@
         "barryvdh/laravel-dompdf": "^0.8.6",
         "bepsvpt/secure-headers": "^7.0",
         "braintree/braintree_php": "^5.0",
+        "ddeboer/imap": "^1.0",
         "doctrine/dbal": "^2.9",
         "eluceo/ical": "^0.16",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "6.5.x-dev",
+        "guzzlehttp/guzzle": "^7.0",
         "halaxa/json-machine": "^0.4.0",
         "hautelook/phpass": "^1.1",
         "intervention/image": "^2.5",
@@ -71,7 +72,8 @@
         "wmandai/oauth-5-laravel": "^1.0",
         "wmandai/pdf-invoice": "^1.4",
         "wmandai/repositories": "^1.0.2",
-        "yajra/laravel-datatables-oracle": "^9.0"
+        "yajra/laravel-datatables-oracle": "^9.0",
+        "lcobucci/jwt": "3.3.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "*",

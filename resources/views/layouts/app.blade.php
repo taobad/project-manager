@@ -61,8 +61,7 @@ $ext = substr($favicon, -4);?>
     @stack('pagestyle')
     <link rel="stylesheet" href="{{ mix('css/app.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ mix('css/tailwind.css') }}" type="text/css" />
-    {{-- <link rel="stylesheet" href="{{ getAsset('storage/css/style.css') }}" type="text/css" /> --}}
-    {{-- <link rel="stylesheet" href="{{ asset('storage/css/style.css') }}" type="text/css" /> --}}
+    <link rel="stylesheet" href="{{ getAsset('storage/css/style.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ getAsset('css/lato.css') }}" type="text/css" />
     @livewireStyles
     @include('partial.custom')
