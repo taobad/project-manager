@@ -17,6 +17,7 @@
         "php": "^7.3|^8.0",
         "anandsiddharth/laravel-paytm-wallet": "^1.0.0",
         "arrilot/laravel-widgets": "^3.7",
+        "autodesk/forge-client": "^1.0",
         "bacon/bacon-qr-code": "^1.0",
         "barryvdh/laravel-dompdf": "^0.8.6",
         "bepsvpt/secure-headers": "^7.0",
@@ -43,6 +44,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^3.0",
         "laravelcollective/html": "^6.0",
+        "lcobucci/jwt": "3.3.3",
         "league/flysystem-aws-s3-v3": "^1.0",
         "league/html-to-markdown": "^4.4",
         "livewire/livewire": "^2.0",
@@ -69,9 +71,7 @@
         "wmandai/oauth-5-laravel": "^1.0",
         "wmandai/pdf-invoice": "^1.4",
         "wmandai/repositories": "^1.0.2",
-        "yajra/laravel-datatables-oracle": "^9.0",
-        "lcobucci/jwt": "3.3.3",
-        "autodesk/forge-client": "^1.0"
+        "yajra/laravel-datatables-oracle": "^9.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "*",
