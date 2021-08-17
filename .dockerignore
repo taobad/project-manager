@@ -3,5 +3,3 @@ node_modules
 .idea
 .env
 vendor
-storage/framework
-storage/logs
