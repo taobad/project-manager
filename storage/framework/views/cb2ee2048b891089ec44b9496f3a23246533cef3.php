@@ -1,1 +1,0 @@
-<link rel="stylesheet" href="<?php echo e(getAsset('plugins/calendar/main.min.css')); ?>" type="text/css" /><?php /**PATH /var/www/project-manager/resources/views/stacks/css/fullcalendar.blade.php ENDPATH**/ ?>
