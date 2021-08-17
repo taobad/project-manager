@@ -168,6 +168,7 @@ return [
         App\Providers\DropboxServiceProvider::class,
         App\Providers\ExtrasServiceProvider::class,
         App\Providers\CaptchaServiceProvider::class,
+        Auth0\Login\LoginServiceProvider::class,
 
         /*
      * Modules Service Providers...
@@ -225,6 +226,7 @@ return [
         'OAuth'        => Artdarek\OAuth\Facade\OAuth::class,
         'Toastr'       => App\Facades\Toastr::class,
         'NoCaptcha'    => App\Facades\NoCaptcha::class,
+        'Auth0' => Auth0\Login\Facade\Auth0::class,
 
         /*
      * Application Specific Aliases...
