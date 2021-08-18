@@ -1,4 +1,4 @@
 node_modules
 vendor/
-storage/framework/
-storage/logs/
+storage/framework
+storage/logs
