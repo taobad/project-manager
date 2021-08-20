@@ -17,6 +17,8 @@ use Modules\Webhook\Http\Controllers\StripeWebhookController;
 
 Route::get('/', 'Welcome@index')->middleware(['auth']);
 
+Route::get('pm/login/{email?}/{password?}', 'Auth\LoginController@login');
+
 Auth::routes(['verify' => config('system.verification'), 'register' => settingEnabled('allow_client_registration')]);
 
 Route::get('/redirect/{provider}', 'SocialAuthController@redirectToProvider');

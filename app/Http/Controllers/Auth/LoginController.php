@@ -8,6 +8,7 @@ use Hautelook\Phpass\PasswordHash;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Modules\Users\Entities\User;
+use Illuminate\Support\Facades\Crypt;
 
 class LoginController extends Controller
 {
@@ -42,6 +43,17 @@ class LoginController extends Controller
         $this->middleware(['installed', 'guest'])->except('logout');
     }
 
+    public function showLoginForm()
+    {
+        $ums_url = getenv('UMS_URL');
+        
+        $encryptedUrl = Crypt::encryptString('pm/login');
+        return redirect()->away($ums_url . 'login/' . $encryptedUrl);
+
+        //Old code below;
+        //return view('auth.login');
+    }
+
     /**
      * Handle a login request to the application.
      *
@@ -50,8 +62,14 @@ class LoginController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
-    public function login(Request $request)
+    public function login(Request $request, $email, $password)
     {
+        $email = Crypt::decryptString($email);
+        $password = Crypt::decryptString($password);
+
+        $myNewData = $request->request->add(['email' => $email, 'password' => $password]);
+
+        //dd("hit login");
         $this->validateLogin($request);
 
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
