@@ -168,7 +168,6 @@ return [
         App\Providers\DropboxServiceProvider::class,
         App\Providers\ExtrasServiceProvider::class,
         App\Providers\CaptchaServiceProvider::class,
-        Auth0\Login\LoginServiceProvider::class,
 
         /*
      * Modules Service Providers...
