@@ -68,8 +68,7 @@ class LoginController extends Controller
         $password = Crypt::decryptString($password);
 
         $myNewData = $request->request->add(['email' => $email, 'password' => $password]);
-
-        //dd("hit login");
+        
         $this->validateLogin($request);
 
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
@@ -111,6 +110,7 @@ class LoginController extends Controller
             $rules['g-recaptcha-response'] = 'required|captcha';
         }
         $this->validate($request, $rules);
+        
     }
 
     /**
