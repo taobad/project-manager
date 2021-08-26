@@ -57,7 +57,6 @@ class UsersApiController extends Controller
     }
 
     public function saveUms($request){
-        Log::info($request->profession);
         $userColumns = ['username', 'email', 'password', 'name', 'profession'];
         $user = $this->user->create($request->only($userColumns));
         $user->update(['profession'=>$request->profession]);
