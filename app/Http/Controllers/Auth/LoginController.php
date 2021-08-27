@@ -134,6 +134,8 @@ class LoginController extends Controller
     public function logout()
     {
         auth()->logout();
-        return redirect('/');
+        $ums_url = getenv('UMS_URL');
+        $encryptedUrl = Crypt::encryptString('pm/login');
+        return redirect()->away($ums_url . 'signout/' . $encryptedUrl);
     }
 }
