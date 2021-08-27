@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Modules\Users\Http\Controllers\Api\v1\UsersApiController;
 use Log;
+use DB;
 
 
 class pmSubscribe extends Command
@@ -43,11 +44,15 @@ class pmSubscribe extends Command
      */
     public function handle()
     {
-          Redis::subscribe(['pm-user-registration'], function ($message) {
+        Redis::subscribe(['pm-user-registration'], function ($message) {
             $userData  = json_decode($message, true);
-            $request = new Request($userData);
-            $uapi = new UsersApiController($request);
-            $uapi->saveUms($request);
+            // Prevent Duplicate user Entry
+            $user = DB::table('fx_users')->where('email', $userData['email'])->get();
+            if (!$user) {
+                $request = new Request($userData);
+                $uapi = new UsersApiController($request);
+                $uapi->saveUms($request);
+            }
         });
     }
 }
