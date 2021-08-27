@@ -47,8 +47,8 @@ class pmSubscribe extends Command
         Redis::subscribe(['pm-user-registration'], function ($message) {
             $userData  = json_decode($message, true);
             // Prevent Duplicate user Entry
-            $user = DB::table('fx_users')->where('email', $userData['email'])->get();
-            if (!$user) {
+            $users = DB::table('users')->where('email', $userData['email'])->get();
+            if ($users->isEmpty()) {
                 $request = new Request($userData);
                 $uapi = new UsersApiController($request);
                 $uapi->saveUms($request);
