@@ -46,9 +46,7 @@ class LoginController extends Controller
     public function showLoginForm()
     {
         $ums_url = getenv('UMS_URL');
-        
-        $encryptedUrl = Crypt::encryptString('pm/login');
-        return redirect()->away($ums_url . 'login/' . $encryptedUrl);
+        return redirect()->away($ums_url . 'login');
 
         //Old code below;
         //return view('auth.login');
@@ -135,7 +133,6 @@ class LoginController extends Controller
     {
         auth()->logout();
         $ums_url = getenv('UMS_URL');
-        $encryptedUrl = Crypt::encryptString('pm/login');
-        return redirect()->away($ums_url . 'signout/' . $encryptedUrl);
+        return redirect()->away($ums_url . 'signout');
     }
 }
