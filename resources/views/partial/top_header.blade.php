@@ -89,12 +89,10 @@
                                 <div class="relative w-full text-gray-500 focus-within:text-gray-600">
                                     <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none">
                                         <svg class="w-5 h-5 m-1" fill="currentColor" viewBox="0 0 20 20">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"></path>
                                         </svg>
                                     </div>
-                                    <input x-ref="searchField" x-on:keydown.window.prevent.slash="$refs.searchField.focus()" name="keyword" placeholder="Type and press Enter"
-                                        class="block w-full h-full py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 bg-gray-200 rounded-md focus:outline-none focus:placeholder-gray-600 sm:text-sm">
+                                    <input x-ref="searchField" x-on:keydown.window.prevent.slash="$refs.searchField.focus()" name="keyword" placeholder="Type and press Enter" class="block w-full h-full py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 bg-gray-200 rounded-md focus:outline-none focus:placeholder-gray-600 sm:text-sm">
                                 </div>
                             </div>
 
@@ -105,8 +103,7 @@
             </li>
             @endadmin
 
-            <li><a title="Visit Ecommerce Portal" href="{{ url(getenv('ECOM_URL')) }}" target="_blank"><i class="fa fa-external-link fa-lg"
-            aria-hidden="true"></i> ECOM Portal</a></li>
+            <li><a title="Visit Ecommerce Portal" href="{{ url(getenv('ECOM_URL') . ecom_endpoint()) }}" target="_blank"><i class="fa fa-external-link fa-lg" aria-hidden="true"></i> ECOM Portal</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <span class="thumb-sm avatar pull-left">

@@ -1425,3 +1425,14 @@ if (!function_exists('_dd')) {
         dd($args);
     }
 }
+
+function ecom_endpoint()
+{
+    if (Auth::check()) { 
+        if(Auth::user()->hasRole('admin')) {
+            return 'myadmin';
+        }
+    }
+
+    return '';
+}
