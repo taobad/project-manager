@@ -1431,6 +1431,14 @@ function ecom_endpoint()
     if (Auth::check()) { 
         if(Auth::user()->hasRole('admin')) {
             return 'myadmin';
+        } elseif(Auth::user()->hasRole('supplier')) {
+            return 'supplier';
+        } elseif(Auth::user()->hasRole('professional')) {
+            return 'professional';
+        } elseif(Auth::user()->hasRole('client')) {
+            return '';
+        } else{
+            return 'consultant';
         }
     }
 
