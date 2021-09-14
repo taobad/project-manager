@@ -163,7 +163,7 @@
                         <div class="ribbon {{$project->ribbonColor()}}"><span>{{$project->status}}</span></div>
 
 
-                        <div class="sub-tab m-b-10">
+                        <div class="sub-tab m-b-10">    
                             <ul class="nav pro-nav-tabs nav-tabs-dashed">
                                 @foreach (projectMenu() as $menu)
                                 @php $perm = true; @endphp

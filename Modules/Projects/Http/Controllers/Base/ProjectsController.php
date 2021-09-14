@@ -39,7 +39,6 @@ abstract class ProjectsController extends Controller
     {
         $data['page'] = $this->getPage();
         $data['filter'] = $this->request->filter;
-
         return view('projects::index')->with($data);
     }
     /**
@@ -47,13 +46,12 @@ abstract class ProjectsController extends Controller
      */
     public function view(Project $project, $tab = 'dashboard', $item = null)
     {
-        $allowedTabs = ['issues', 'calendar', 'comments', 'expenses', 'files', 'gantt', 'invoices', 'links', 'milestones', 'notes', 'tasks', 'timesheets'];
+        $allowedTabs = ['issues', 'calendar', 'comments', 'expenses', 'files', 'gantt', 'invoices', 'links', 'milestones', 'notes', 'tasks', 'timesheets', '3d viewer'];
         $data['tab'] = in_array($tab, $allowedTabs) ? $tab : 'dashboard';
         $data['page'] = $this->getPage();
         $data['project'] = $project;
         $data['item'] = $item;
         $data['filter'] = $this->request->filter;
-
         return view('projects::view')->with($data);
     }
     /**
