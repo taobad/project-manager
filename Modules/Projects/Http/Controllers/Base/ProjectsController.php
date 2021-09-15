@@ -46,7 +46,7 @@ abstract class ProjectsController extends Controller
      */
     public function view(Project $project, $tab = 'dashboard', $item = null)
     {
-        $allowedTabs = ['issues', 'calendar', 'comments', 'expenses', 'files', 'gantt', 'invoices', 'links', 'milestones', 'notes', 'tasks', 'timesheets', '3d viewer'];
+        $allowedTabs = ['issues', 'calendar', 'comments', 'expenses', 'files', 'gantt', 'invoices', 'links', 'milestones', 'notes', 'tasks', 'timesheets', '3dviewer'];
         $data['tab'] = in_array($tab, $allowedTabs) ? $tab : 'dashboard';
         $data['page'] = $this->getPage();
         $data['project'] = $project;

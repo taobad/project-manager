@@ -162,7 +162,6 @@
 
                         <div class="ribbon {{$project->ribbonColor()}}"><span>{{$project->status}}</span></div>
 
-
                         <div class="sub-tab m-b-10">    
                             <ul class="nav pro-nav-tabs nav-tabs-dashed">
                                 @foreach (projectMenu() as $menu)
@@ -179,8 +178,12 @@
                                 @endif
                                 @endif
                                 <li class="{{ $tab == $menu->route ? 'active font-bold' : ''}}">
-                                    <a class="text-xs text-gray-600 uppercase" href="{{ route('projects.view', ['project' => $project->id, 'tab' => $menu->route])}}">
-                                        @langapp($menu->route)
+                                    <a class="text-xs text-gray-600 uppercase" href="{{ route('projects.view', ['project' => $project->id, 'tab' => $menu->route])}}"> 
+                                        @if(@langapp($menu->route) == "app.3dviewer")
+                                            3D VIEWER
+                                        @else
+                                            @langapp($menu->route)
+                                        @endif
                                         @if ($timer_on > 0)
                                         <span class="m-r-xs">@icon('solid/sync-alt', 'fa-spin text-danger')</span>
                                         @endif
