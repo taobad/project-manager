@@ -193,7 +193,7 @@ $ext = substr($favicon, -4);?>
     @include('partial.pusher')
     @endif
     <script src="{{ mix('js/plugins.js') }}"></script>
-
+      
 
     @isset($help)
     <script src="{{ getAsset('plugins/intro/intro.min.js') }}"></script>
@@ -271,6 +271,8 @@ $ext = substr($favicon, -4);?>
             }
         }
     </script>
+     
+
 </body>
 
 </html>

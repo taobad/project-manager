@@ -76,3 +76,6 @@ Route::post('forge/model-derivative/jobs', 'Forge\ModelDerivative\JobController@
 Route::resource('forge', 'ForgeController');
 // Route::resource('forge-buckets', 'ForgeBucketController');
 //=============/.End Forge Routes=========//
+
+Route::get('category-profession/{id}', 'SupportController@catpro')->name('category-profession');
+Route::get('team-member/{id}', 'SupportController@team')->name('team-member');
