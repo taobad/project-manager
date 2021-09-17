@@ -25,6 +25,7 @@ Route::get('/redirect/{provider}', 'SocialAuthController@redirectToProvider');
 Route::get('/callback/{provider}', 'SocialAuthController@handleProviderCallback');
 
 Route::get('/logout', 'Auth\LoginController@logout');
+Route::get('/apilogout', 'Auth\LoginController@apilogout');
 Route::get('/articles', 'ArticleController@index')->name('articles.public');
 Route::get('/articles/view/{article}', 'ArticleController@view')->name('articles.public.view');
 
@@ -76,3 +77,6 @@ Route::post('forge/model-derivative/jobs', 'Forge\ModelDerivative\JobController@
 Route::resource('forge', 'ForgeController');
 // Route::resource('forge-buckets', 'ForgeBucketController');
 //=============/.End Forge Routes=========//
+
+Route::get('category-profession/{id}', 'SupportController@catpro')->name('category-profession');
+Route::get('team-member/{id}', 'SupportController@team')->name('team-member');
