@@ -77,6 +77,7 @@
           your bucket name and in turn masked by the UI so you only have to make sure your bucket name is unique within
           your current Forge app.
         </div>
+        <input type="hidden" id="csrf_token" name="csrf_token" value="{{csrf_token()}}">
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
           <button type="button" class="btn btn-primary" id="createNewBucket">Go ahead, create the bucket</button>

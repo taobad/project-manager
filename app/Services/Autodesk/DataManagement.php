@@ -24,13 +24,13 @@ class DataManagement{
         $bucketKey = ForgeConfig::$prepend_bucketkey?(strtolower(ForgeConfig::getForgeID()).'_'.$body['bucketKey']):$body['bucketKey'];
         // $policeKey = $body['policyKey'];
         $policeKey = "transient";
-
+        
         $apiInstance = new BucketsApi($accessToken);
         $post_bucket = new PostBucketsPayload();
         $post_bucket->setBucketKey($bucketKey);
         $post_bucket->setPolicyKey($policeKey);
 
-        try {
+        try { 
             $result = $apiInstance->createBucket($post_bucket);
             print_r($result);
         } catch (Exception $e) {
@@ -115,11 +115,10 @@ class DataManagement{
           // $fileRead = fread($filePath, $content_length);
 
           try {
-
-             $result = $apiInstance->uploadObject($bucket_key, $fileToUpload['name'], $content_length, $file_content);
-              print_r($result);
+            $result = $apiInstance->uploadObject($bucket_key, $fileToUpload['name'], $content_length, $file_content);
+            print_r($result);
           } catch (Exception $e) {
-              echo 'Exception when calling ObjectsApi->uploadObject: ', $e->getMessage(), PHP_EOL;
+            echo 'Exception when calling ObjectsApi->uploadObject: ', $e->getMessage(), PHP_EOL;
           }
       }
 }

@@ -13,6 +13,7 @@ $(document).ready(function () {
   })
 
   $('#hiddenUploadField').change(function () {
+    var csrfToken = $('#csrf_token').val();
     var node = $('#appBuckets').jstree(true).get_selected(true)[0];
     var _this = this;
     if (_this.files.length == 0) return;
@@ -22,6 +23,7 @@ $(document).ready(function () {
         var formData = new FormData();
         formData.append('fileToUpload', file);
         formData.append('bucketKey', node.id);
+        formData.append('_token', csrfToken);
 
         $.ajax({
           url: '/forge/oss/objects',
@@ -40,11 +42,12 @@ $(document).ready(function () {
 });
 
 function createNewBucket() {
+  var csrfToken = $('#csrf_token').val();
   var bucketKey = $('#newBucketKey').val();
   jQuery.post({
     url: '/forge/oss/buckets',
     contentType: 'application/json',
-    data: JSON.stringify({ 'bucketKey': bucketKey }),
+    data: JSON.stringify({ 'bucketKey': bucketKey, '_token': csrfToken }),
     success: function (res) {
       $('#appBuckets').jstree(true).refresh();
       $('#createBucketModal').modal('toggle');
@@ -149,6 +152,7 @@ function uploadFile() {
 }
 
 function translateObject(node) {
+  var csrfToken = $('#csrf_token').val();
   $("#forgeViewer").empty();
   if (node == null) node = $('#appBuckets').jstree(true).get_selected(true)[0];
   var bucketKey = node.parents[0];
@@ -156,7 +160,7 @@ function translateObject(node) {
   jQuery.post({
     url: '/forge/model-derivative/jobs',
     contentType: 'application/json',
-    data: JSON.stringify({ 'bucketKey': bucketKey, 'objectName': objectKey }),
+    data: JSON.stringify({ 'bucketKey': bucketKey, 'objectName': objectKey, '_token': csrfToken}),
     success: function (res) {
       $("#forgeViewer").html('Translation started! Please try again in a moment.');
     },
