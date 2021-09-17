@@ -131,10 +131,18 @@ class LoginController extends Controller
         }
     }
 
+    public function apilogout(Request $request)
+    {
+        auth()->logout();
+        return response()->json(['status' => 'SUCCESS']);
+    }
+
     public function logout()
     {
         auth()->logout();
         $ums_url = getenv('UMS_URL');
-        return redirect()->away($ums_url . 'signout');
+        $request_portal = Crypt::encryptString('pm');
+
+        return redirect()->away($ums_url . 'signout?request_portal=' . $request_portal);
     }
 }
