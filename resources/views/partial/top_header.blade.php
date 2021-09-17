@@ -103,7 +103,7 @@
             </li>
             @endadmin
 
-            <li><a title="Visit Ecommerce Portal" href="{{ url(getenv('ECOM_URL') . ecom_endpoint()) }}" target="_blank"><i class="fa fa-external-link fa-lg" aria-hidden="true"></i> ECOM Portal</a></li>
+            <li><a title="Visit Ecommerce Portal" href="{{ url(getenv('ECOM_URL') . ecom_endpoint()) }}"><i class="fa fa-external-link fa-lg" aria-hidden="true"></i> ECOM Portal</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <span class="thumb-sm avatar pull-left">

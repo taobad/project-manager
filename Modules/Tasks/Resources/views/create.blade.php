@@ -51,10 +51,33 @@
             @endif
 
             @can('users_assign')
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Member category</label>
+                <div class="col-md-8">
+                    <select name="membercategory" class="form-control" id="membercategory">
+                        <option value="none" selected>@langapp('none')  </option>
+                        <option value="4">Consultant</option>
+                        <option value="91">Professional</option>
+                        <option value="51">Supplier</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Member Type</label>
+                <div class="col-md-8" id="membertypediv">
+                    <select name="membertype" class="form-control" id="membertype">
+                        <option value="none" selected>@langapp('none')  </option>
+                    </select>
+                </div>
+            </div>
+
+
                 <div class="form-group">
                     <label class="col-lg-4 control-label">@langapp('team_members') @required</label>
                     <div class="col-lg-8">
-                        <select class="select2-option form-control" name="team[]" multiple required>
+                        <select class="select2-option form-control" name="team[]" multiple required id="team">
                         @foreach ($project->assignees as $member)
                             <option value="{{ $member->user_id }}" {!! $member->user_id === Auth::id() ? 'selected' : '' !!}>{{ $member->user->name }}</option>
                         @endforeach
@@ -311,7 +334,66 @@ $('.money').maskMoney({allowZero: true, thousands: '', allowNegative: true});
             $("#recurring").show();
         }
     }).change();
+
+
+    
 </script>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $("#membercategory").change(function () {
+                var id = $(this).val();
+                $('#membertype').find('option').not(':first').remove();
+                $.ajax({
+                    url: '/category-profession/'+id,
+                    type: 'get',
+                    contentType: 'application/json;charset=utf-8',
+                    dataType: 'json',
+                    success: function (response) {
+                        var len = 0;
+                        if (response['data'] != null) {
+                            len = response['data'].length;
+                        }
+                        for(var i = 0; i < len; i++){
+                            var id = response['data'][i]['id'];
+                            var name = response['data'][i]['profession'];
+                            var option = "<option value='" + name + "'>" + name + "</option>";
+                            $("#membertype").append(option);
+                        }
+                    },
+                    error: function(request, status, error){
+                        console.log(request.responseText);
+                    }
+                });
+            });
+
+            $("#membertype").change(function () {
+                var id = $(this).val();
+                $('#team').find('option').remove();
+                $.ajax({
+                    url: '/team-member/'+id,
+                    type: 'get',
+                    contentType: 'application/json;charset=utf-8',
+                    dataType: 'json',
+                    success: function (response) {
+                        var len = 0;
+                        if (response['data'] != null) {
+                            len = response['data'].length;
+                        }
+                        for(var i = 0; i < len; i++){
+                            var id = response['data'][i]['id'];
+                            var name = response['data'][i]['name'];
+                            var option = "<option value='" + name + "'>" + name + "</option>";
+                            $("#team").append(option);
+                        }
+                    },
+                    error: function(request, status, error){
+                        console.log(request.responseText);
+                    }
+                });
+            });
+        });
+     </script>
 @include('partial.ajaxify')
 
 @endpush

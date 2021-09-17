@@ -63,6 +63,7 @@ Route::get('support', 'SupportController@ticket')->name('support.ticket')->middl
 Route::post('stripe/webhook', [StripeWebhookController::class, 'handleWebhook']);
 Route::gocardlessWebhooks('webhook/gocardless/ipn');
 
+//============Forge Routes=============//
 // Get access token
 Route::get('forge/oauth/token', 'Forge\OAuth\TokenController@index')->name('forge.token');
 // Get all the buckets & objects
@@ -75,3 +76,7 @@ Route::post('forge/oss/objects', 'Forge\Oss\ObjectController@store')->name('forg
 Route::post('forge/model-derivative/jobs', 'Forge\ModelDerivative\JobController@store')->name('forge.jobs');
 Route::resource('forge', 'ForgeController');
 // Route::resource('forge-buckets', 'ForgeBucketController');
+//=============/.End Forge Routes=========//
+
+Route::get('category-profession/{id}', 'SupportController@catpro')->name('category-profession');
+Route::get('team-member/{id}', 'SupportController@team')->name('team-member');
