@@ -131,18 +131,21 @@ class LoginController extends Controller
         }
     }
 
-    public function apilogout(Request $request)
+    public function logout(Request $request)
     {
+        //Logout on PM
         auth()->logout();
-        return response()->json(['status' => 'SUCCESS']);
-    }
 
-    public function logout()
-    {
-        auth()->logout();
+        //Do logout on ECOM
+        if(url()->previous() !== getenv('ECOM_URL'))
+        {
+            $ecom_url = getenv('ECOM_URL');
+            return redirect()->away($ecom_url . 'logout');
+        }
+
+        //Do logout on UMS
         $ums_url = getenv('UMS_URL');
         $request_portal = Crypt::encryptString('pm');
-
         return redirect()->away($ums_url . 'signout?request_portal=' . $request_portal);
     }
 }
