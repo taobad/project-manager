@@ -152,7 +152,7 @@ class LoginController extends Controller
         if(url()->previous() !== getenv('ECOM_URL'))
         {
             $ecom_url = getenv('ECOM_URL');
-            return redirect()->away($ecom_url . 'logout');
+            return redirect()->away($ecom_url . 'doEcomLogout');
         }
 
         //Do logout on UMS
