@@ -1,6 +1,5 @@
 node_modules
 vendor/
 storage/framework
-storage/logs
-storage/logs/projectmanager-nginx.error.log
-storage/logs/projectmanager-nginx.error.log
+storage/logs/*
+
