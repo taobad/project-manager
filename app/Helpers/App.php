@@ -1432,7 +1432,7 @@ function ecom_endpoint()
         if(Auth::user()->hasRole('admin')) {
             return 'myadmin';
         } elseif(Auth::user()->hasRole('supplier')) {
-            return 'supplier';
+            return 'supplier/dashboard';
         } elseif(Auth::user()->hasRole('professional')) {
             return 'professional';
         } elseif(Auth::user()->hasRole('client')) {
