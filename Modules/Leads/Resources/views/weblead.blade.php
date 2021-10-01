@@ -4,20 +4,7 @@
   <div id="login-darken"></div>
   <div id="login-form" class="container aside-xxl animated fadeInUp">
     <span class="navbar-brand block {{ settingEnabled('blur_login') ? 'text-white' : '' }}">
-      @php $display = get_option('logo_or_icon'); @endphp
-      @if ($display == 'logo' || $display == 'logo_title')
-      <img src="{{ getStorageUrl(config('system.media_dir').'/'.get_option('company_logo')) }}"
-      class="img-responsive {{ ($display == 'logo' ? '' : 'thumb-sm m-r-sm') }}">
-      @elseif ($display == 'icon' || $display == 'icon_title')
-      <i class="{{ get_option('site_icon') }}"></i>
-      @endif
-      @if ($display == 'logo_title' || $display == 'icon_title')
-      @if (get_option('website_name') == '')
-      {{ get_option('company_name') }}
-      @else
-      {{ get_option('website_name') }}
-      @endif
-      @endif
+      <img src="/images/lupinga-logo-transparent.png" class="img-responsive {{ ($display == 'logo' ? '' : 'thumb-sm m-r-sm') }}"> LupingaPM
     </span>
     <section class="panel panel-default bg-white m-t-sm b-r-xs">
     <header class="panel-heading text-center login-heading">@langapp('contact_us')

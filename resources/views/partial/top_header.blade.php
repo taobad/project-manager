@@ -5,19 +5,7 @@
                 @icon('solid/bars')
             </a>
             <a href="{{url('/')}}" class="navbar-brand {{themeText()}}">
-                @php $display = get_option('logo_or_icon'); @endphp
-                @if ($display == 'logo' || $display == 'logo_title')
-                <img src="{{ getStorageUrl(config('system.media_dir').'/'.get_option('company_logo'))}}" class="mr-1">
-                @elseif ($display == 'icon' || $display == 'icon_title')
-                <i class="fa {{get_option('site_icon')}}"></i>
-                @endif
-                @if ($display == 'logo_title' || $display == 'icon_title')
-                @if (get_option('website_name') == '')
-                {{ get_option('company_name') }}
-                @else
-                {{ get_option('website_name') }}
-                @endif
-                @endif
+                <img src="/images/lupinga-logo-transparent.png" class="mr-1"> LupingaPM
             </a>
             <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
                 @icon('solid/cog')
