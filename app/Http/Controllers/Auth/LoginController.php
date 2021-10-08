@@ -62,10 +62,14 @@ class LoginController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
-    public function projectLogin(Request $request, $email, $password)
+    public function projectLogin(Request $request)
     {
-        $email = Crypt::decryptString($email);
+        $email = Crypt::decryptString($request->get('email'));
+        $password = urldecode($request->get('password'));
+
         //dd($password);
+        //$password = Crypt::decryptString($password);
+        
         if (Auth::attempt(['email' => $email , 'password' => $password])){
             //return redirect()->away($pm_url . 'projects/create');
             return redirect('/projects/create');

@@ -19,7 +19,7 @@ Route::get('/', 'Welcome@index')->middleware(['auth']);
 
 Route::get('pm/login/{email?}/{password?}/{isStartProject?}', 'Auth\LoginController@login');
 //Route::get('projectlogin/{email?}/{password?}', 'Auth\LoginController@login');start/project/login/
-Route::get('start/project/login/{email?}/{password?}', 'Auth\LoginController@projectLogin');
+Route::get('start/project/login', 'Auth\LoginController@projectLogin');
 
 
 Auth::routes(['verify' => config('system.verification'), 'register' => settingEnabled('allow_client_registration')]);
