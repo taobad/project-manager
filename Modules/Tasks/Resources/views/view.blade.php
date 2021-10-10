@@ -171,7 +171,7 @@
                                 <ul class="list-unstyled team-info m-sm">
                                     @foreach ($task->assignees as $assignee)
                                     <li>
-                                        <img src="{{ $assignee->user->profile->photo}}" data-toggle="tooltip" data-title="{{$assignee->user->name  }}" data-placement="top">
+                                        <img src="{{ $assignee->user->profile ??$assignee->user->profile->photo : ''}}" data-toggle="tooltip" data-title="{{$assignee->user->name  }}" data-placement="top">
                                     </li>
                                     @endforeach
                                 </ul>
