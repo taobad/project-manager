@@ -14,6 +14,29 @@
                     <input type="text" class="form-control" value="{{  $task->name  }}" name="name">
                 </div>
             </div>
+
+            <div class="form-group">
+                <span class="col-md-4 control-label">@langapp('type')  @required</span>
+                <div class="col-md-8">
+                    <select name="type" class="form-control" id="task_type">
+                            <option value="1" {{ $task->type == '1' ? 'selected' : '' }}>@langapp('task') </option>
+                            <option value="2" {{ $task->type == '2' ? 'selected' : '' }}>@langapp('sub_task') </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group" id="parent_task_block">
+                    <label class="col-lg-4 control-label">@langapp('parent_task') @required</label>
+                    <div class="col-lg-8">
+                        <select  id="parent_task_id" name="parent_task_id" class="form-control">
+                            @foreach (Modules\Tasks\Entities\Task::select('id', 'name')->where('type', '1')->get() as $t)
+                                <option value="{{  $t->id  }}" {{ $t->id == $task->parent_task_id ? 'selected' : '' }}>
+                                    {{  $t->name  }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
             @if ($task->AsProject->isTeam() || can('milestones_create'))
             <div class="form-group">
                 <label class="col-lg-4 control-label">@langapp('milestone')</label>
@@ -40,6 +63,52 @@
             </div>
 
             @endif
+
+            @can('users_assign')
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Member category</label>
+                <div class="col-md-8">
+                    <select name="membercategory" class="form-control" id="membercategory">
+                        <option value="none" selected>@langapp('none')  </option>
+                        <option value="4">Consultant</option>
+                        <option value="91">Professional</option>
+                        <option value="51">Supplier</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Member Type</label>
+                <div class="col-md-8" id="membertypediv">
+                    <select name="membertype" class="form-control" id="membertype">
+                        <option value="none" selected>@langapp('none')  </option>
+                    </select>
+                </div>
+            </div>
+
+
+                <div class="form-group">
+                    <label class="col-lg-4 control-label">@langapp('team_members') @required</label>
+                    
+                    <div class="col-lg-8">
+                        <select class="select2-option form-control" multiple="multiple" name="team[]" required>
+                            @foreach ($task->AsProject->assignees as $member)
+                            <option value="{{  $member->user_id  }}" {{ $task->isTeam($member->user_id) ? 'selected' : '' }}>
+                                {{  $member->user->name  }}
+                            </option>
+                            @endforeach
+                            @if (optional($task->AsProject->company)->primary_contact > 0)
+                            <option value="{{ $task->AsProject->company->primary_contact }}" {{ $task->isTeam($task->AsProject->company->primary_contact) ? 'selected' : ''}}>
+                                {{ $task->AsProject->company->contact->name }}
+                            </option>
+                            @endif
+                        </select>
+                    </div>
+                </div>
+
+            @endcan
+            
             <div class="form-group">
                 <label class="col-lg-4 control-label">@langapp('description') @required</label>
                 <div class="col-lg-8">
@@ -93,25 +162,6 @@
                 </div>
             </div>
             @endif
-            @can('users_assign')
-            <div class="form-group">
-                <label class="col-lg-4 control-label">@langapp('assigned') @required</label>
-                <div class="col-lg-8">
-                    <select class="select2-option form-control" multiple="multiple" name="team[]" required>
-                        @foreach ($task->AsProject->assignees as $member)
-                        <option value="{{  $member->user_id  }}" {{ $task->isTeam($member->user_id) ? 'selected' : '' }}>
-                            {{  $member->user->name  }}
-                        </option>
-                        @endforeach
-                        @if (optional($task->AsProject->company)->primary_contact > 0)
-                        <option value="{{ $task->AsProject->company->primary_contact }}" {{ $task->isTeam($task->AsProject->company->primary_contact) ? 'selected' : ''}}>
-                            {{ $task->AsProject->company->contact->name }}
-                        </option>
-                        @endif
-                    </select>
-                </div>
-            </div>
-            @endcan
 
 
             <div class="form-group">
@@ -214,6 +264,77 @@
         }
     });
 </script>
+
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $("#membercategory").change(function () {
+                var id = $(this).val();
+                $('#membertype').find('option').not(':first').remove();
+                $.ajax({
+                    url: '/category-profession/'+id,
+                    type: 'get',
+                    contentType: 'application/json;charset=utf-8',
+                    dataType: 'json',
+                    success: function (response) {
+                        var len = 0;
+                        if (response['data'] != null) {
+                            len = response['data'].length;
+                        }
+                        for(var i = 0; i < len; i++){
+                            var id = response['data'][i]['id'];
+                            var name = response['data'][i]['profession'];
+                            var option = "<option value='" + name + "'>" + name + "</option>";
+                            $("#membertype").append(option);
+                        }
+                    },
+                    error: function(request, status, error){
+                        console.log(request.responseText);
+                    }
+                });
+            });
+
+            $("#membertype").change(function () {
+                var id = $(this).val();
+                $('#team').find('option').remove();
+                $.ajax({
+                    url: '/team-member/'+id,
+                    type: 'get',
+                    contentType: 'application/json;charset=utf-8',
+                    dataType: 'json',
+                    success: function (response) {
+                        var len = 0;
+                        if (response['data'] != null) {
+                            len = response['data'].length;
+                        }
+                        for(var i = 0; i < len; i++){
+                            var id = response['data'][i]['id'];
+                            var name = response['data'][i]['name'];
+                            var option = "<option value='" + name + "'>" + name + "</option>";
+                            $("#team").append(option);
+                        }
+                    },
+                    error: function(request, status, error){
+                        console.log(request.responseText);
+                    }
+                });
+            });
+        });
+     </script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#task_type').change(function () {
+        if ($("#task_type").val() == "2") {
+            $("#parent_task_block").show();
+        } else {
+            $("#parent_task_block").hide();
+            $("#parent_task_id").val('');
+        }
+        }).change();
+    });
+    </script>
 @endpush
 @stack('pagestyle')
 @stack('pagescript')
