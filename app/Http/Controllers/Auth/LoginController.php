@@ -49,9 +49,6 @@ class LoginController extends Controller
         $redirect_portal = Crypt::encryptString('pm');
 
         return redirect()->away($ums_url . 'login?redirect_portal=' . $redirect_portal);
-
-        //Old code below;
-        //return view('auth.login');
     }
 
     /**
@@ -78,17 +75,17 @@ class LoginController extends Controller
         }
     }
 
-    public function login(Request $request, $email, $password)
+    public function login(Request $request)
     {
+        $email = request()->get('email');
+        $password = request()->get('password');
+        
         $email = Crypt::decryptString($email);
-
-        //dd($password);
-
+        
         $myNewData = $request->request->add(['email' => $email, 'password' => $password]);
         
         $this->validateLogin($request);
 
-        //dd($request);
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
         // the login attempts for this application. We'll key this by the username and
         // the IP address of the client making these requests into this application.

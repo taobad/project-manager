@@ -40,7 +40,7 @@ class Task extends Model
     protected static $scope = TaskScope::class;
 
     protected $fillable = [
-        'name', 'project_id', 'milestone_id', 'description', 'visible', 'progress', 'estimated_hours', 'auto_progress',
+        'name', 'type', 'parent_type_id', 'project_id', 'milestone_id', 'description', 'visible', 'progress', 'estimated_hours', 'auto_progress',
         'start_date', 'due_date', 'user_id', 'stage_id', 'reminded_at', 'hourly_rate', 'time', 'archived_at',
         'is_recurring', 'created_at', 'todo_percent',
     ];

@@ -21,6 +21,29 @@
                 </div>
             </div>
 
+            <div class="form-group">
+                <span class="col-md-4 control-label">@langapp('type')  @required</span>
+                <div class="col-md-8">
+                    <select name="type" class="form-control" id="task_type">
+                            <option value="1">@langapp('task') </option>
+                            <option value="2">@langapp('sub_task') </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group" id="parent_task_block">
+                    <label class="col-lg-4 control-label">@langapp('parent_task') @required</label>
+                    <div class="col-lg-8">
+                        <select  id="parent_task_id" name="parent_task_id" class="form-control">
+                            @foreach (Modules\Tasks\Entities\Task::select('id', 'name')->where('type', '1')->get() as $t)
+                                <option value="{{  $t->id  }}">
+                                    {{  $t->name  }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+
             @if ($project->isTeam() || can('milestones_create'))
                 <div class="form-group">
                     <label class="col-lg-4 control-label">@langapp('milestone')  </label>
@@ -392,6 +415,19 @@ $('.money').maskMoney({allowZero: true, thousands: '', allowNegative: true});
                     }
                 });
             });
+        });
+     </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#task_type').change(function () {
+            if ($("#task_type").val() == "2") {
+                $("#parent_task_block").show();
+            } else {
+                $("#parent_task_block").hide();
+                $("#parent_task_id").val('');
+            }
+            }).change();
         });
      </script>
 @include('partial.ajaxify')
