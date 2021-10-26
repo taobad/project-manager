@@ -29,6 +29,7 @@ Route::get('/redirect/{provider}', 'SocialAuthController@redirectToProvider');
 Route::get('/callback/{provider}', 'SocialAuthController@handleProviderCallback');
 
 Route::get('/logout', 'Auth\LoginController@logout');
+Route::get('/clearLogout', 'Auth\LoginController@clearLogout');
 Route::get('/articles', 'ArticleController@index')->name('articles.public');
 Route::get('/articles/view/{article}', 'ArticleController@view')->name('articles.public.view');
 
