@@ -1434,7 +1434,7 @@ function ecom_endpoint()
         } elseif(Auth::user()->hasRole('supplier')) {
             return 'supplier/dashboard';
         } elseif(Auth::user()->hasRole('professional')) {
-            return 'professional';
+            return 'professional/home';
         } elseif(Auth::user()->hasRole('client')) {
             return '';
         } else{

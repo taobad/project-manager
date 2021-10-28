@@ -161,15 +161,4 @@ class LoginController extends Controller
         $request_portal = Crypt::encryptString('pm');
         return redirect()->away($ums_url . 'signout?request_portal=' . $request_portal);
     }
-
-    public function clearLogout(Request $request)
-    {
-        //Logout on PM
-        auth()->logout();
-
-        //Do logout on UMS
-        $ums_url = getenv('UMS_URL');
-        $request_portal = Crypt::encryptString('pm');
-        return redirect()->away($ums_url . 'signout?request_portal=' . $request_portal);
-    }
 }
