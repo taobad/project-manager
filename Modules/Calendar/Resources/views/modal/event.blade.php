@@ -427,9 +427,10 @@
                 @if ($event->project_id > 0)
                 <li class="list-group-item">
                     <div class="pull-right">
-                        <a class="font-semibold text-indigo-600" href="{{ route('projects.view', $event->project_id) }}">   
-                            {{--To do: find out how to get project name--}}
-                            {{ 'fix: Supposed project name' }}
+                        <a class="font-semibold text-indigo-600" href="{{ route('projects.view', $event->project_id) }}">
+                            @if(isset($event->project_name))
+                                {{ $event->project_name }}
+                            @endif
                         </a>
                     </div>
                     @langapp('project')
