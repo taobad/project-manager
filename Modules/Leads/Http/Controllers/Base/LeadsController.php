@@ -58,7 +58,6 @@ abstract class LeadsController extends Controller
         $data['page'] = $this->getPage();
         $data['displayType'] = $this->getDisplayType();
         $data['filter'] = $this->request->filter;
-
         return view('leads::index')->with($data);
     }
 
