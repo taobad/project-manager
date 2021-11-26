@@ -47,8 +47,7 @@ class LoginController extends Controller
     {
         $ums_url = getenv('UMS_URL');
         $redirect_portal = Crypt::encryptString('pm');
-
-        return redirect()->away($ums_url . 'login?redirect_portal=' . $redirect_portal);
+        return redirect()->away($ums_url . 'authenticate?redirect_portal=' . $redirect_portal);
     }
 
     /**

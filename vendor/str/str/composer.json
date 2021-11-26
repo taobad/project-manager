@@ -1,0 +1,44 @@
+{
+    "name": "str/str",
+    "description": "A fast modern string manipulation library with multibyte support. Based on Stringy, with focus on speed.",
+    "homepage": "https://github.com/fe3dback/str",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fe3dback",
+            "email": "fe3dback@yandex.ru"
+        },
+        {
+            "name": "irhen",
+            "email": "personalwonderland@gmail.com"
+        },
+        {
+            "name": "Daniel St. Jules",
+            "email": "danielst.jules@gmail.com",
+            "homepage": "http://www.danielstjules.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "ext-mbstring": "*",
+        "ext-json": "*"
+    },
+    "support": {
+        "issues": "https://github.com/fe3dback/str/issues",
+        "source": "https://github.com/fe3dback/str"
+    },
+    "autoload": {
+        "psr-4": {
+            "Str\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpbench/phpbench": "dev-master",
+        "phpunit/phpunit": "^8.5",
+        "danielstjules/stringy": "3.1",
+        "php-coveralls/php-coveralls": "^2.4",
+        "ramsey/uuid": "^4.1",
+        "phpdocumentor/reflection-docblock": "^5.2"
+    }
+}

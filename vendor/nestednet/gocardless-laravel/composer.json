@@ -1,0 +1,42 @@
+{
+  "name": "nestednet/gocardless-laravel",
+  "description": "GoCardless Pro PHP Client package integration for Laravel.",
+  "keywords": [
+    "php",
+    "nestednet",
+    "laravel",
+    "gocardless"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nested",
+      "email": "dev@nested.net",
+      "homepage": "https://nested.net"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3",
+    "illuminate/support": ">=5.5.0",
+    "gocardless/gocardless-pro": "^4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nestednet\\Gocardless\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Nestednet\\Gocardless\\GocardlessServiceProvider"
+      ],
+      "aliases": {
+        "Gocardless": "Nestednet\\Gocardless\\Facades\\Gocardless"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
