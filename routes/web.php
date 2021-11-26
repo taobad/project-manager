@@ -29,6 +29,15 @@ Route::get('/redirect/{provider}', 'SocialAuthController@redirectToProvider');
 Route::get('/callback/{provider}', 'SocialAuthController@handleProviderCallback');
 
 Route::get('/logout', 'Auth\LoginController@logout');
+Route::get('/clearLogout', function(){
+    //Logout on PM
+    auth()->logout();
+
+    //Do logout on UMS
+    $ums_url = getenv('UMS_URL');
+    $request_portal = Crypt::encryptString('pm');
+    return redirect()->away($ums_url . 'signout?request_portal=' . $request_portal);
+});
 Route::get('/articles', 'ArticleController@index')->name('articles.public');
 Route::get('/articles/view/{article}', 'ArticleController@view')->name('articles.public.view');
 

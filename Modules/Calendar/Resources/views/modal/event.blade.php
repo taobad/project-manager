@@ -428,7 +428,9 @@
                 <li class="list-group-item">
                     <div class="pull-right">
                         <a class="font-semibold text-indigo-600" href="{{ route('projects.view', $event->project_id) }}">
-                            {{ $event->eventable->name }}
+                            @if(isset($event->project_name))
+                                {{ $event->project_name }}
+                            @endif
                         </a>
                     </div>
                     @langapp('project')

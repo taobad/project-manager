@@ -95,7 +95,7 @@ class LoginController extends Controller
         }
 
         if ($this->attemptLogin($request) || $this->oldLogin($request)) {
-             return $this->sendLoginResponse($request);
+            return $this->sendLoginResponse($request);
         }
         
 

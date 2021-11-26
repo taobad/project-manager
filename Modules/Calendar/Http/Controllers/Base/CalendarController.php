@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Modules\Calendar\Entities\Appointment;
 use Modules\Calendar\Entities\Calendar;
+use Modules\Projects\Entities\Project;
+use Illuminate\Support\Facades\DB;
 
 abstract class CalendarController extends Controller
 {
@@ -155,6 +157,11 @@ abstract class CalendarController extends Controller
                 break;
             case 'events':
                 $data['event'] = Calendar::findOrFail($entity);
+                if($data['event']['project_id'] !== 0){
+                    $project = DB::table('projects')->where('id', '=', $data['event']['project_id'])->get();
+                    $project_name = $project[0]->name;
+                    $data['event'] = array_add($data['event'], 'project_name', $project_name);
+                }
                 break;
             case 'deals':
                 $data['deal'] = \Modules\Deals\Entities\Deal::findOrFail($entity);
