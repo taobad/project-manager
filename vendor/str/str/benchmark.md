@@ -1,0 +1,1806 @@
+PhpBench 0.15-dev (@git_version@). Running benchmarks.
+Using configuration file: bench_lib.json
+
+Benchmark string libs
+---------------------
+
+### benchmark: AppendAndPrependBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_prepend_Str | 1.400μs | 1,927,560b | 1.00x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Str | 1.412μs | 1,927,560b | 1.01x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_append_Stringy | 3.592μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+bench_prepend_Stringy | 3.600μs | 1,877,104b | 2.57x
+
+### benchmark: AtAndBetweenBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_at_Str | 1.812μs | 1,927,728b | 1.00x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_between_Str | 2.082μs | 1,927,736b | 1.15x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_at_Stringy | 4.509μs | 1,877,280b | 2.49x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+bench_between_Stringy | 4.610μs | 1,877,280b | 2.55x
+
+### benchmark: CamelCaseBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_upper_camelize_Str | 10.939μs | 1,927,560b | 1.00x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Str | 11.114μs | 1,927,552b | 1.02x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_camelize_Stringy | 25.017μs | 1,877,096b | 2.29x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+bench_upper_camelize_Stringy | 30.483μs | 1,877,104b | 2.79x
+
+### benchmark: CharsBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Str | 6.509μs | 1,926,120b | 1.00x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+bench_chars_Stringy | 33.507μs | 1,875,672b | 5.15x
+
+### benchmark: CommonBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Str | 811.098μs | 1,929,728b | 1.00x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+bench_common_Stringy | 5,310.290μs | 1,879,272b | 6.55x
+
+### benchmark: ContainsBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_contains_Str | 1.963μs | 1,930,776b | 1.00x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_all_Str | 2.452μs | 1,930,768b | 1.25x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_contains_Stringy | 2.903μs | 1,880,320b | 1.48x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_all_Stringy | 3.436μs | 1,880,320b | 1.75x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Str | 4.295μs | 1,930,768b | 2.19x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+bench_any_Stringy | 5.512μs | 1,880,320b | 2.81x
+
+### benchmark: CountAndLengthBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Str | 1.680μs | 1,927,784b | 1.00x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_length_Stringy | 2.586μs | 1,877,328b | 1.54x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Str | 5.338μs | 1,927,784b | 3.18x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+bench_count_substr_Stringy | 6.989μs | 1,877,336b | 4.16x
+
+### benchmark: DelimitersBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_underscored_Str | 7.129μs | 1,928,920b | 1.00x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_dasherize_Str | 7.229μs | 1,928,920b | 1.01x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Str | 7.240μs | 1,928,920b | 1.02x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_delimit_Stringy | 24.555μs | 1,878,464b | 3.44x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_dasherize_Stringy | 24.988μs | 1,878,464b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+bench_underscored_Stringy | 25.012μs | 1,878,472b | 3.51x
+
+### benchmark: EnsureBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_left_Str | 2.021μs | 1,927,608b | 1.00x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_right_Str | 2.150μs | 1,927,608b | 1.06x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_left_Stringy | 5.154μs | 1,877,160b | 2.55x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+bench_ensure_right_Stringy | 5.944μs | 1,877,160b | 2.94x
+
+### benchmark: FirstAndLastBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_first_Str | 2.723μs | 1,929,760b | 1.00x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_last_Str | 2.751μs | 1,929,760b | 1.01x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_first_Stringy | 8.991μs | 1,879,312b | 3.30x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+bench_last_Stringy | 9.956μs | 1,879,312b | 3.66x
+
+### benchmark: HTMLRelatedBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_decode_Str | 1.833μs | 1,927,576b | 1.00x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_encode_Str | 1.902μs | 1,927,576b | 1.04x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_decode_Stringy | 3.910μs | 1,877,128b | 2.13x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+bench_html_encode_Stringy | 4.011μs | 1,877,128b | 2.19x
+
+### benchmark: HumanizeAndSlugifyBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Str | 5.556μs | 1,927,576b | 1.00x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_humanize_Stringy | 20.195μs | 1,877,120b | 3.63x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Str | 48.082μs | 1,927,576b | 8.65x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+bench_slugify_Stringy | 88.086μs | 1,877,120b | 15.85x
+
+### benchmark: IndexOfBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOf_Str | 2.015μs | 1,927,592b | 1.00x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Str | 2.423μs | 1,927,592b | 1.20x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOfLast_Stringy | 2.836μs | 1,877,144b | 1.41x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+bench_indexOf_Stringy | 2.862μs | 1,877,136b | 1.42x
+
+### benchmark: InsertBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Str | 2.192μs | 1,926,328b | 1.00x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+bench_insert_Stringy | 6.241μs | 1,875,872b | 2.85x
+
+### benchmark: IsAlphaBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_numeric_Str | 1.667μs | 1,927,520b | 1.00x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Str | 1.698μs | 1,927,512b | 1.02x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_Stringy | 7.570μs | 1,877,056b | 4.54x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+bench_is_alpha_numeric_Stringy | 7.616μs | 1,877,064b | 4.57x
+
+### benchmark: IsBlankBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Str | 1.711μs | 1,926,144b | 1.00x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+bench_is_blank_Stringy | 7.722μs | 1,875,688b | 4.51x
+
+### benchmark: IsHexadecimalBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Str | 1.652μs | 1,926,248b | 1.00x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+bench_is_hexadecimal_Stringy | 7.557μs | 1,875,792b | 4.57x
+
+### benchmark: IsJsonBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Str | 1.942μs | 1,926,144b | 1.00x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+bench_is_json_Stringy | 3.852μs | 1,875,688b | 1.98x
+
+### benchmark: IsOrHasLowerCaseBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_has_lower_case_Str | 1.714μs | 1,927,608b | 1.00x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_is_lower_case_Str | 1.729μs | 1,927,600b | 1.01x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_has_lower_case_Stringy | 7.646μs | 1,877,152b | 4.46x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+bench_is_lower_case_Stringy | 7.662μs | 1,877,152b | 4.47x
+
+### benchmark: IsOrHasUpperCaseBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_is_upper_case_Str | 1.708μs | 1,927,600b | 1.00x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_has_upper_case_Str | 1.746μs | 1,927,608b | 1.02x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_is_upper_case_Stringy | 7.604μs | 1,877,152b | 4.45x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+bench_has_upper_case_Stringy | 7.639μs | 1,877,152b | 4.47x
+
+### benchmark: IsSerializedOrBase64Bench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_base64_Str | 1.875μs | 1,927,616b | 1.00x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_serialized_Str | 2.236μs | 1,927,616b | 1.19x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_base64_Stringy | 2.745μs | 1,877,160b | 1.46x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+bench_is_serialized_Stringy | 2.941μs | 1,877,168b | 1.57x
+
+### benchmark: LinesBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Str | 1.843μs | 1,926,088b | 1.00x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+bench_lines_Stringy | 13.153μs | 1,875,640b | 7.14x
+
+### benchmark: LongestCommonSubstrBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Str | 3.282μs | 1,929,280b | 1.00x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_suffix_Stringy | 6.458μs | 1,878,832b | 1.97x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Str | 7.345μs | 1,929,280b | 2.24x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_prefix_Stringy | 12.367μs | 1,878,832b | 3.77x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Str | 131.929μs | 1,929,288b | 40.20x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+bench_longest_common_substring_Stringy | 178.824μs | 1,878,832b | 54.49x
+
+### benchmark: PadBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_right_Str | 2.229μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_left_Str | 2.231μs | 1,928,968b | 1.00x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_both_Str | 2.865μs | 1,928,968b | 1.29x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_left_Stringy | 6.104μs | 1,878,512b | 2.74x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_right_Stringy | 6.213μs | 1,878,512b | 2.79x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+bench_pad_both_Stringy | 6.680μs | 1,878,512b | 3.00x
+
+### benchmark: PrefixesBooleansBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_Str | 1.849μs | 1,928,576b | 1.00x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_any_Str | 3.211μs | 1,928,584b | 1.74x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_Stringy | 3.278μs | 1,878,128b | 1.77x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+bench_starts_with_any_Stringy | 5.231μs | 1,878,128b | 2.83x
+
+### benchmark: RemoveBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_left_Str | 2.487μs | 1,927,640b | 1.00x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_right_Str | 3.040μs | 1,927,640b | 1.22x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_left_Stringy | 8.817μs | 1,877,192b | 3.55x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+bench_remove_right_Stringy | 9.548μs | 1,877,192b | 3.84x
+
+### benchmark: RepeatBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Str | 1.741μs | 1,926,176b | 1.00x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+bench_repeat_Stringy | 3.848μs | 1,875,720b | 2.21x
+
+### benchmark: ReplaceBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_regex_replace_Str | 2.900μs | 1,927,912b | 1.00x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_replace_Str | 3.103μs | 1,927,912b | 1.07x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_regex_replace_Stringy | 10.786μs | 1,877,464b | 3.72x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+bench_replace_Stringy | 11.312μs | 1,877,456b | 3.90x
+
+### benchmark: ShuffleAndReverseBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_reverse_Str | 6.763μs | 1,927,520b | 1.00x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_shuffle_Str | 7.544μs | 1,927,520b | 1.12x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_reverse_Stringy | 12.408μs | 1,877,064b | 1.83x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+bench_shuffle_Stringy | 12.575μs | 1,877,064b | 1.86x
+
+### benchmark: SliceAndSubstrBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_substr_Str | 2.164μs | 1,927,544b | 1.00x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_slice_Str | 2.252μs | 1,927,536b | 1.04x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_substr_Stringy | 5.197μs | 1,877,088b | 2.40x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+bench_slice_Stringy | 5.470μs | 1,877,088b | 2.53x
+
+### benchmark: SplitBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Str | 2.028μs | 1,926,152b | 1.00x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+bench_split_Stringy | 11.949μs | 1,875,704b | 5.89x
+
+### benchmark: StripAndCollapseWhitespaceBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_strip_whitespace_Str | 2.858μs | 1,927,744b | 1.00x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_collapse_whitespace_Str | 4.337μs | 1,927,744b | 1.52x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_strip_whitespace_Stringy | 10.959μs | 1,877,288b | 3.83x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+bench_collapse_whitespace_Stringy | 20.818μs | 1,877,296b | 7.28x
+
+### benchmark: SuffixesBooleansBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_Str | 2.106μs | 1,928,544b | 1.00x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_any_Str | 3.693μs | 1,928,544b | 1.75x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_Stringy | 4.277μs | 1,878,088b | 2.03x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+bench_ends_with_any_Stringy | 7.027μs | 1,878,096b | 3.34x
+
+### benchmark: SurroundBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Str | 1.407μs | 1,926,216b | 1.00x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+bench_surround_Stringy | 3.931μs | 1,875,760b | 2.79x
+
+### benchmark: SwapCaseBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Str | 18.433μs | 1,926,152b | 1.00x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+bench_swap_case_Stringy | 22.521μs | 1,875,696b | 1.22x
+
+### benchmark: TidyBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Str | 2.142μs | 1,926,120b | 1.00x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+bench_tidy_Stringy | 4.224μs | 1,875,672b | 1.97x
+
+### benchmark: TitleCaseBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Str | 4.565μs | 1,927,536b | 1.00x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_to_title_case_Stringy | 6.809μs | 1,877,088b | 1.49x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Str | 16.850μs | 1,927,536b | 3.69x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+bench_titleize_Stringy | 48.643μs | 1,877,080b | 10.66x
+
+### benchmark: ToAsciiBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Str | 44.402μs | 1,926,144b | 1.00x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+bench_to_ascii_Stringy | 47.974μs | 1,875,688b | 1.08x
+
+### benchmark: ToBooleanBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Str | 1.889μs | 1,926,184b | 1.00x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+bench_to_boolean_Stringy | 6.045μs | 1,875,736b | 3.20x
+
+### benchmark: ToLowerCaseBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_to_lower_case_Str | 3.281μs | 1,927,584b | 1.00x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_lower_case_first_Str | 3.570μs | 1,927,592b | 1.09x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_to_lower_case_Stringy | 5.710μs | 1,877,136b | 1.74x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+bench_lower_case_first_Stringy | 7.277μs | 1,877,136b | 2.22x
+
+### benchmark: ToTabsAndToSpacesBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_spaces_Str | 2.003μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_tabs_Str | 2.007μs | 1,927,560b | 1.00x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_spaces_Stringy | 4.115μs | 1,877,104b | 2.05x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+bench_to_tabs_Stringy | 4.157μs | 1,877,104b | 2.08x
+
+### benchmark: ToUpperCaseBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_to_upper_case_Str | 3.287μs | 1,927,584b | 1.00x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_upper_case_first_Str | 3.565μs | 1,927,592b | 1.08x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_to_upper_case_Stringy | 5.591μs | 1,877,136b | 1.70x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+bench_upper_case_first_Stringy | 7.242μs | 1,877,136b | 2.20x
+
+### benchmark: TrimBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_left_Str | 3.039μs | 1,928,936b | 1.00x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_right_Str | 3.144μs | 1,928,936b | 1.03x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_both_Str | 3.173μs | 1,928,936b | 1.04x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_left_Stringy | 11.319μs | 1,878,488b | 3.72x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_right_Stringy | 11.426μs | 1,878,488b | 3.76x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+bench_both_Stringy | 11.685μs | 1,878,488b | 3.85x
+
+### benchmark: TruncateBench
+
+subject | mode | mem_peak | diff
+ --- | --- | --- | --- 
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_truncate_Str | 2.510μs | 1,927,928b | 1.00x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_safe_truncate_Str | 3.974μs | 1,927,928b | 1.58x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_truncate_Stringy | 5.714μs | 1,877,472b | 2.28x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+bench_safe_truncate_Stringy | 7.627μs | 1,877,480b | 3.04x
+
