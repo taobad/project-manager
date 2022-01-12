@@ -45,7 +45,7 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        $ums_url = getenv('UMS_URL');
+        $ums_url = getenv('ADMIN_URL');
         $redirect_portal = Crypt::encryptString('pm');
         return redirect()->away($ums_url . 'authenticate?redirect_portal=' . $redirect_portal);
     }
@@ -65,11 +65,11 @@ class LoginController extends Controller
 
         //dd($password);
         //$password = Crypt::decryptString($password);
-        
-        if (Auth::attempt(['email' => $email , 'password' => $password])){
+
+        if (Auth::attempt(['email' => $email, 'password' => $password])) {
             //return redirect()->away($pm_url . 'projects/create');
             return redirect('/projects/create');
-        }else{
+        } else {
             dd("failed login");
         }
     }
@@ -78,11 +78,11 @@ class LoginController extends Controller
     {
         $email = request()->get('email');
         $password = request()->get('password');
-        
+
         $email = Crypt::decryptString($email);
-        
+
         $myNewData = $request->request->add(['email' => $email, 'password' => $password]);
-        
+
         $this->validateLogin($request);
 
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
@@ -97,7 +97,7 @@ class LoginController extends Controller
         if ($this->attemptLogin($request) || $this->oldLogin($request)) {
             return $this->sendLoginResponse($request);
         }
-        
+
 
         // If the login attempt was unsuccessful we will increment the number of attempts
         // to login and redirect the user back to the login form. Of course, when this
@@ -122,7 +122,6 @@ class LoginController extends Controller
             $rules['g-recaptcha-response'] = 'required|captcha';
         }
         $this->validate($request, $rules);
-        
     }
 
     /**
@@ -149,14 +148,13 @@ class LoginController extends Controller
         auth()->logout();
 
         //Do logout on ECOM
-        if(url()->previous() !== getenv('ECOM_URL'))
-        {
+        if (url()->previous() !== getenv('ECOM_URL')) {
             $ecom_url = getenv('ECOM_URL');
             return redirect()->away($ecom_url . 'doEcomLogout');
         }
 
         //Do logout on UMS
-        $ums_url = getenv('UMS_URL');
+        $ums_url = getenv('ADMIN_URL');
         $request_portal = Crypt::encryptString('pm');
         return redirect()->away($ums_url . 'signout?request_portal=' . $request_portal);
     }
