@@ -35,7 +35,7 @@ use Modules\Users\Entities\User;
 class Lead extends Model
 {
     use Notifiable, Commentable, Todoable, Taggable, Actionable, Customizable, HasFactory,
-    Observable, Noteable, Eventable, Uploadable, Remindable, Phoneable, Searchable, Emailable, Chatable;
+    Noteable, Eventable, Uploadable, Remindable, Phoneable, Searchable, Emailable, Chatable;
 
     protected static $observer = LeadObserver::class;
     protected static $scope = LeadScope::class;
